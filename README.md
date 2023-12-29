@@ -15,3 +15,17 @@ The bag files contain the colour images with intrinsics, the depth images regist
 /vicon/kinect/kinect                         : geometry_msgs/TransformStamped
 /vicon/markers                               : vicon_bridge/Markers
 ```
+
+If you use this data, please cite:
+```bibtex
+@ARTICLE{Rauch2022,
+  author={Rauch, Christian and Long, Ran and Ivan, Vladimir and Vijayakumar, Sethu},
+  journal={IEEE Robotics and Automation Letters},
+  title={Sparse-Dense Motion Modelling and Tracking for Manipulation Without Prior Object Models},
+  year={2022},
+  volume={7},
+  number={4},
+  pages={11394-11401},
+  doi={10.1109/LRA.2022.3200177}
+}
+```
