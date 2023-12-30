@@ -29,3 +29,28 @@ If you use this data, please cite:
   doi={10.1109/LRA.2022.3200177}
 }
 ```
+
+## Usage
+
+### ROS 1
+
+Use the ROS 1 `rosbag` command-line tool to publish the topics from the bag files:
+```sh
+rosbag play estimation/nx_estim1_manipulation.bag
+```
+
+### ROS 2
+
+Install [`rosbags`](https://gitlab.com/ternaris/rosbags):
+```sh
+pip3 install rosbags
+```
+and convert the bag files from ROS 1 to ROS 2:
+```sh
+find . -type f -name *.bag -exec rosbags-convert "{}" \;
+```
+
+Then you can use the ROS 2 command-line tool to publish the topics:
+```sh
+ros2 bag play estimation/nx_estim1_manipulation
+```
