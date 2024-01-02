@@ -30,6 +30,11 @@ If you use this data, please cite:
 }
 ```
 
+Mirrors:
+- https://conferences.inf.ed.ac.uk/MultiMotionFusion
+- https://github.com/christian-rauch/MultiMotionFusion-data
+- https://gitlab.com/christian-rauch/MultiMotionFusion-data
+
 ## Usage
 
 ### ROS 1
