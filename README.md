@@ -61,7 +61,7 @@ pip3 install rosbags
 ```
 and convert the bag files from ROS 1 to ROS 2:
 ```sh
-find . -type f -name *.bag -exec rosbags-convert "{}" \;
+find . -type f -name *.bag -exec sh -c 'rosbags-convert --src $0 --dst ${0%.bag}' '{}' \;
 ```
 
 Then you can use the ROS 2 command-line tool to publish the topics:
