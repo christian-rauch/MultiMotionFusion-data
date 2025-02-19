@@ -37,6 +37,15 @@ Mirrors:
 
 ## Usage
 
+### Download
+
+Install Git LFS via https://git-lfs.com or the Debian package:
+```sh
+sudo apt install git-lfs
+git lfs install
+```
+and then download the repo via `git clone`.
+
 ### ROS 1
 
 Use the ROS 1 `rosbag` command-line tool to publish the topics from the bag files:
